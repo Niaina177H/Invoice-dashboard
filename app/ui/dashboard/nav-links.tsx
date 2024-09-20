@@ -6,7 +6,6 @@ import {
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 // Map of links to display in the side navigation.

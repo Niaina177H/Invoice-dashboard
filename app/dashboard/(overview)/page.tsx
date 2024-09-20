@@ -1,10 +1,14 @@
 import { lusitana } from "../../ui/fonts";
-import { Card } from "../../ui/dashboard/cards";
 import RevenueChart from "../../ui/dashboard/revenue-chart";
 import LatestInvoices from "../../ui/dashboard/latest-invoices";
 import { Suspense } from "react";
-import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardsSkeleton, CardSkeleton } from "@/app/ui/skeletons";
+import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardSkeleton } from "@/app/ui/skeletons";
 import CardWrapper from "../../ui/dashboard/cards";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Dashboard",
+}
 
 export default async function Page(){
     return (
